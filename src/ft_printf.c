@@ -6,7 +6,7 @@
 /*   By: ltuffery <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 19:09:34 by ltuffery          #+#    #+#             */
-/*   Updated: 2022/11/12 15:50:01 by ltuffery         ###   ########.fr       */
+/*   Updated: 2022/11/15 12:57:46 by ltuffery         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,8 @@ int	ft_printf(const char *str, ...)
 	int		len;
 	va_list	args;
 
+	if (str == NULL)
+		return (-1);
 	va_start(args, str);
 	len = ft_parsing(str, args);
 	va_end(args);

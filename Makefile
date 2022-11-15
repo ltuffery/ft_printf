@@ -6,13 +6,13 @@
 #    By: ltuffery <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/02 19:01:38 by ltuffery          #+#    #+#              #
-#    Updated: 2022/11/08 14:23:08 by ltuffery         ###   ########.fr        #
+#    Updated: 2022/11/15 12:58:09 by ltuffery         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	:= libftprintf.a
 
-CC		:= gcc
+CC		:= clang
 
 CFLAGS	:= -Wall -Wextra -Werror
 
@@ -35,7 +35,7 @@ $(NAME): $(OBJS)
 
 %.o: %.c
 	@echo "===== Compile Files ====="
-	$(CC) $(CFLAGS) -c $< -o $@ -ggdb3
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -rf $(OBJS)

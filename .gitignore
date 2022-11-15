@@ -1,0 +1,13 @@
+test/
+tests/*
+*.swp
+*/*.swp
+a.out
+*.a
+*/*.a
+*/*.o
+*.o
+printfTester/*
+printfTester
+ft_printf_tester/*
+ft_printf_tester
